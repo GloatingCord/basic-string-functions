@@ -1,0 +1,21 @@
+{
+    "name": "gloatingcord26/basic-string-functions",
+    "autoload": {
+        "psr-4": {
+            "Main\\": "src/"
+        }
+    },
+    "require": {
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.7"
+    },
+    "scripts": {
+        "phpstan": [
+            "phpstan analyze --level max Classes/ Files/"
+        ],
+        "test": [
+            "@phpstan"
+        ]
+    }
+}

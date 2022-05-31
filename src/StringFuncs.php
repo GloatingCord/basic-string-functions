@@ -9,8 +9,10 @@ class StringFuncs implements StringInterface
     ) {
     }
 
-    public function mbStrrev($encoding = null): string
+    public function mbStrrev(): string
     {
+        $encoding = null;
+
         if (null === $encoding) {
             $encoding = mb_detect_encoding($this->word);
         }

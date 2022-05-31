@@ -4,23 +4,28 @@ namespace GloatingCord26\BasicStringFunctions;
 
 class StringFuncs implements StringInterface
 {
-    public function mbStrrev(string $word, $encoding = null): string
+    public function __construct(
+        private string $word,
+    ) {
+    }
+
+    public function mbStrrev($encoding = null): string
     {
         if (null === $encoding) {
-            $encoding = mb_detect_encoding($word);
+            $encoding = mb_detect_encoding($this->word);
         }
 
-        $length = mb_strlen($word, $encoding);
+        $length = mb_strlen($this->word, $encoding);
         $reversed = '';
         while ($length-- > 0) {
-            $reversed .= mb_substr($word, $length, 1, $encoding);
+            $reversed .= mb_substr($this->word, $length, 1, $encoding);
         }
 
         return $reversed;
     }
 
-    public function createSecurePassword(string $word): string
+    public function createSecurePassword(): string
     {
-        return password_hash($word, PASSWORD_DEFAULT);
+        return password_hash($this->word, PASSWORD_DEFAULT);
     }
 }

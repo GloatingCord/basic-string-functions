@@ -2,11 +2,7 @@
     "name": "gloatingcord26/basic-string-functions",
     "autoload": {
         "psr-4": {
-<<<<<<< HEAD
             "GloatingCord26\\BasicStringFunctions\\": "src/"
-=======
-            "BasicStringFunctions\\Main\\": "src/"
->>>>>>> 653cbbea868362b83e1b765b76761850f3fc3222
         }
     },
     "require-dev": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace BasicStringFunctions\Main;
+namespace GloatingCord26\BasicStringFunctions;
 
 class StringFuncs implements StringInterface
 {

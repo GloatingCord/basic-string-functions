@@ -2,7 +2,7 @@
     "name": "gloatingcord26/basic-string-functions",
     "autoload": {
         "psr-4": {
-            "BasicStringFunctions\\Main": "src/"
+            "GloatingCord26\\BasicStringFunctions\\": "src/"
         }
     },
     "require": {

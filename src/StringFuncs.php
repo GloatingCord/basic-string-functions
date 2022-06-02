@@ -4,12 +4,7 @@ namespace GloatingCord26\BasicStringFunctions;
 
 class StringFuncs implements StringInterface
 {
-    public function __construct(
-        private string $word,
-    ) {
-    }
-
-    public function mbStrrev(): string
+    public function mbStrrev($word): string
     {
         $encoding = null;
 
@@ -26,7 +21,7 @@ class StringFuncs implements StringInterface
         return $reversed;
     }
 
-    public function createSecurePassword(): string
+    public function createSecurePassword($word): string
     {
         return password_hash($this->word, PASSWORD_DEFAULT);
     }

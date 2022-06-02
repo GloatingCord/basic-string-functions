@@ -4,7 +4,7 @@ namespace GloatingCord26\BasicStringFunctions;
 
 interface StringInterface
 {
-    public function mbStrrev();
+    public function mbStrrev(string $word);
 
-    public function createSecurePassword();
+    public function createSecurePassword(string $word);
 }
